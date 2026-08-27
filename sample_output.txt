@@ -1,0 +1,118 @@
+============================================================
+Q1: Orders by Status
+============================================================
+                       Status  order_count
+                      Shipped        77804
+ Shipped - Delivered to Buyer        28769
+                    Cancelled        18332
+ Shipped - Returned to Seller         1953
+          Shipped - Picked Up          973
+                      Pending          658
+Pending - Waiting for Pick Up          281
+Shipped - Returning to Seller          145
+   Shipped - Out for Delivery           35
+  Shipped - Rejected by Buyer           11
+                     Shipping            8
+    Shipped - Lost in Transit            5
+            Shipped - Damaged            1
+
+============================================================
+Q2: Revenue by Category
+============================================================
+     Category  order_count  total_amount  avg_amount
+          Set        46029   39204124.03      851.73
+        kurta        45859   21299546.70      464.46
+Western Dress        14473   11216072.69      774.97
+          Top         9991    5347792.30      535.26
+ Ethnic Dress         1061     791217.66      745.73
+       Blouse          859     458408.18      533.65
+       Bottom          408     150667.98      369.28
+        Saree          154     123933.76      804.76
+      Dupatta            3        915.00      305.00
+
+============================================================
+Q3: Broader status groups
+============================================================
+status_group  order_count
+   Completed       107581
+   Cancelled        18332
+    Returned         2109
+     Pending          947
+       Issue            6
+
+============================================================
+Q4: Monthly trend
+============================================================
+order_month  order_count  total_revenue
+    2022-03          171      101683.85
+    2022-04        49067    28838708.32
+    2022-05        42040    26226476.75
+    2022-06        37697    23425809.38
+
+============================================================
+Q5: Above-average categories
+============================================================
+     Category  avg_category_amount
+          Set               851.73
+        Saree               804.76
+Western Dress               774.97
+ Ethnic Dress               745.73
+
+============================================================
+Q6: Price tier vs status
+============================================================
+price_tier status_group  order_count
+   Premium    Completed        55729
+   Premium    Cancelled         9625
+   Premium     Returned         1205
+   Premium      Pending          544
+   Premium        Issue            4
+  Standard    Completed        51852
+  Standard    Cancelled         8707
+  Standard     Returned          904
+  Standard      Pending          403
+  Standard        Issue            2
+
+============================================================
+Q7: Top 5 cities
+============================================================
+     city  order_count  total_revenue
+BENGALURU        10466     6849664.99
+HYDERABAD         7483     4946032.82
+   MUMBAI         5731     3704461.80
+NEW DELHI         5302     3613874.78
+  CHENNAI         5042     3098745.74
+
+============================================================
+Q8: Above category average
+============================================================
+     Category  above_avg_orders
+        kurta             18786
+          Set             18528
+          Top              4835
+Western Dress              4740
+ Ethnic Dress               676
+       Blouse               447
+       Bottom               118
+        Saree                77
+
+============================================================
+Q9: B2B vs regular
+============================================================
+ B2B  order_count  avg_order_value  avg_quantity
+   0       117994           661.06          0.96
+   1          843           701.33          1.00
+
+============================================================
+Q10: Cancellation rate
+============================================================
+     Category  total_orders  cancelled_orders  cancellation_rate_pct
+          Set         50284              7337                  14.59
+        kurta         49877              7255                  14.55
+Western Dress         15500              2122                  13.69
+       Bottom           440                60                  13.64
+        Saree           164                21                  12.80
+       Blouse           926               116                  12.53
+ Ethnic Dress          1159               145                  12.51
+          Top         10622              1276                  12.01
+      Dupatta             3                 0                   0.00
